@@ -1,0 +1,14 @@
+{
+    "name": "page-ruler",
+    "version": "1.0",
+    "desc": "A page ruler tool based on KISSY",
+    "cover": "",
+    "tag":"标尺",
+    "author": {
+        "name": "L3au",
+        "email": "me@l3au.com",
+        "page": "https://github.com/L3au"
+    },
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}

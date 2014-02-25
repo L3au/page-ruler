@@ -1,0 +1,401 @@
+.ks-page-ruler {
+  position: fixed;
+  left: 20%;
+  top: 10%;
+  _position: absolute;
+  height: 98px;
+  border: 1px solid #233;
+  background-color: #fff;
+  font: 12px/1.2 monospace, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ks-page-ruler .ks-scales {
+  position: absolute;
+  left: -2px;
+  height: 30px;
+  cursor: none;
+}
+.ks-page-ruler .ks-scales .ks-cursor {
+  position: absolute;
+  height: 40px;
+  width: 1px;
+  background-color: #233;
+  visibility: hidden;
+}
+.ks-page-ruler .ks-scales .ks-cursor:after {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+}
+.ks-page-ruler .ks-scales s {
+  position: absolute;
+  width: 1px;
+  background-color: #233;
+  text-decoration: none;
+}
+.ks-page-ruler .ks-scales .s {
+  height: 4px;
+}
+.ks-page-ruler .ks-scales .m {
+  height: 6px;
+}
+.ks-page-ruler .ks-scales .l {
+  height: 12px;
+}
+.ks-page-ruler .ks-scales .l b {
+  position: absolute;
+  margin-top: 16px;
+  margin-left: -6px;
+  color: #233;
+  font-weight: normal;
+}
+.ks-page-ruler .ks-scales-a {
+  top: 0;
+}
+.ks-page-ruler .ks-scales-a .ks-cursor {
+  top: -27px;
+}
+.ks-page-ruler .ks-scales-a .ks-cursor:after {
+  border-bottom-color: #233;
+  margin-left: -5px;
+  margin-top: 34px;
+}
+.ks-page-ruler .ks-scales-b {
+  bottom: 0;
+}
+.ks-page-ruler .ks-scales-b .ks-cursor {
+  bottom: -27px;
+}
+.ks-page-ruler .ks-scales-b .ks-cursor:after {
+  border-top-color: #233;
+  margin-left: -5px;
+  margin-top: -3px;
+}
+.ks-page-ruler .ks-scales-b s {
+  bottom: 0;
+}
+.ks-page-ruler .ks-scales-b .l b {
+  margin-top: -16px;
+}
+.ks-page-ruler .ks-scales-hover .ks-cursor {
+  visibility: visible;
+}
+.ks-page-ruler .ks-meter {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  height: 40px;
+  cursor: move;
+  zoom: 1;
+}
+.ks-page-ruler .ks-meter .ks-menus {
+  float: left;
+  margin-left: 40px;
+  line-height: 42px;
+}
+.ks-page-ruler .ks-meter .ks-menus a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #233;
+  text-decoration: none;
+}
+.ks-page-ruler .ks-meter .ks-menus .ks-orien {
+  padding: 6px;
+}
+.ks-page-ruler .ks-meter .ks-menus .ks-orien:before {
+  content: "";
+  position: absolute;
+  border: 5px dashed transparent;
+  border-bottom: 5px solid #233;
+  margin-left: -6px;
+  margin-top: -11px;
+}
+.ks-page-ruler .ks-meter .ks-menus .ks-orien:after {
+  content: "";
+  position: absolute;
+  border: 5px dashed transparent;
+  border-top: 5px solid #233;
+  margin-left: -6px;
+  margin-top: 1px;
+}
+.ks-page-ruler .ks-meter .ks-menus .ks-brick {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #233;
+}
+.ks-page-ruler .ks-meter .ks-menus .ks-mini {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 12px;
+}
+.ks-page-ruler .ks-meter .ks-menus .ks-color,
+.ks-page-ruler .ks-meter .ks-menus .ks-close {
+  font-size: 20px;
+  line-height: 12px;
+}
+.ks-page-ruler .ks-meter .ks-figure {
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  font-family: tahoma;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.ks-page-ruler .ks-meter .ks-resize {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -6px;
+  cursor: col-resize;
+}
+.ks-page-ruler .ks-meter .ks-resize:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+}
+.ks-page-ruler .ks-meter .ks-resize:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+}
+.ks-page-ruler .ks-meter .ks-resize-a {
+  left: 0;
+  border-right: 1px solid #233;
+}
+.ks-page-ruler .ks-meter .ks-resize-a:before {
+  margin-left: 2px;
+  margin-top: 4px;
+  border-right: 1px solid #233;
+}
+.ks-page-ruler .ks-meter .ks-resize-a:after {
+  margin-left: 1px;
+  margin-top: 2px;
+  border-right: 1px solid #233;
+}
+.ks-page-ruler .ks-meter .ks-resize-b {
+  right: 0;
+  border-left: 1px solid #233;
+}
+.ks-page-ruler .ks-meter .ks-resize-b:before {
+  margin-left: 5px;
+  margin-top: 4px;
+  border-left: 1px solid #233;
+}
+.ks-page-ruler .ks-meter .ks-resize-b:after {
+  margin-left: 2px;
+  margin-top: 2px;
+  border-left: 1px solid #233;
+}
+.ks-page-ruler .ks-meter:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.ks-page-ruler-v {
+  width: 98px;
+}
+.ks-page-ruler-v .ks-scales {
+  left: auto;
+  top: -2px;
+  width: 30px;
+}
+.ks-page-ruler-v .ks-scales .ks-cursor {
+  width: 40px;
+  height: 1px;
+}
+.ks-page-ruler-v .ks-scales .ks-cursor:after {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+}
+.ks-page-ruler-v .ks-scales s {
+  position: absolute;
+  right: 0;
+  height: 1px !important;
+}
+.ks-page-ruler-v .ks-scales .s {
+  width: 4px;
+}
+.ks-page-ruler-v .ks-scales .m {
+  width: 6px;
+}
+.ks-page-ruler-v .ks-scales .l {
+  width: 12px;
+}
+.ks-page-ruler-v .ks-scales .l b {
+  width: 28px;
+  text-align: right;
+  margin-top: -6px;
+  margin-left: -30px;
+}
+.ks-page-ruler-v .ks-scales-a {
+  right: 0;
+}
+.ks-page-ruler-v .ks-scales-a .ks-cursor {
+  left: 15px;
+}
+.ks-page-ruler-v .ks-scales-a .ks-cursor:after {
+  margin-left: -5px;
+  margin-top: -4px;
+  border-left-color: #233;
+  border-bottom-color: transparent;
+}
+.ks-page-ruler-v .ks-scales-b {
+  left: 0;
+}
+.ks-page-ruler-v .ks-scales-b .ks-cursor {
+  left: -25px;
+  bottom: auto;
+}
+.ks-page-ruler-v .ks-scales-b .ks-cursor:after {
+  margin-left: 35px;
+  margin-top: -5px;
+  border-top-color: transparent;
+  border-right-color: #233;
+}
+.ks-page-ruler-v .ks-scales-b s {
+  left: 0;
+}
+.ks-page-ruler-v .ks-scales-b .l b {
+  margin-left: 12px;
+  text-align: left;
+}
+.ks-page-ruler-v .ks-meter {
+  left: 30px;
+  top: 0;
+  width: 40px;
+  height: 100%;
+}
+.ks-page-ruler-v .ks-meter .ks-menus {
+  margin-left: 0;
+  margin-top: 40px;
+  line-height: 20px;
+  padding: 0 12px;
+}
+.ks-page-ruler-v .ks-meter .ks-menus a {
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+.ks-page-ruler-v .ks-meter .ks-menus .ks-orien:before {
+  border-right: 5px solid #233;
+  border-bottom-color: transparent;
+  margin-left: -11px;
+  margin-top: -5px;
+}
+.ks-page-ruler-v .ks-meter .ks-menus .ks-orien:after {
+  border-left: 5px solid #233;
+  border-top-color: transparent;
+  margin-left: 1px;
+  margin-top: -5px;
+}
+.ks-page-ruler-v .ks-meter .ks-menus .ks-brick {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #233;
+}
+.ks-page-ruler-v .ks-meter .ks-menus .ks-mini {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 12px;
+}
+.ks-page-ruler-v .ks-meter .ks-menus .ks-color,
+.ks-page-ruler-v .ks-meter .ks-menus .ks-close {
+  font-size: 20px;
+  line-height: 12px;
+}
+.ks-page-ruler-v .ks-meter .ks-figure {
+  left: -30px;
+  width: 100px;
+}
+.ks-page-ruler-v .ks-meter .ks-resize {
+  left: 50%;
+  margin-left: -6px;
+  cursor: row-resize;
+}
+.ks-page-ruler-v .ks-meter .ks-resize-a {
+  top: 5px;
+  border-right: none;
+  border-bottom: 1px solid #233;
+}
+.ks-page-ruler-v .ks-meter .ks-resize-a:before {
+  margin-left: 4px;
+  margin-top: 4px;
+  border-right: none;
+  border-bottom: 1px solid #233;
+}
+.ks-page-ruler-v .ks-meter .ks-resize-a:after {
+  margin-left: 2px;
+  border-right: none;
+  border-bottom: 1px solid #233;
+}
+.ks-page-ruler-v .ks-meter .ks-resize-b {
+  top: auto;
+  bottom: 0;
+  border-left: none;
+  border-top: 1px solid #233;
+}
+.ks-page-ruler-v .ks-meter .ks-resize-b:before {
+  margin-left: 4px;
+  margin-top: 3px;
+  border-left: none;
+  border-top: 1px solid #233;
+}
+.ks-page-ruler-v .ks-meter .ks-resize-b:after {
+  margin-top: 1px;
+  border-left: none;
+  border-top: 1px solid #233;
+}
+#resize {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: 1px solid #233;
+}
+.ks-resizable-handler {
+  position: absolute;
+}
+.ks-resizable-handler-t,
+.ks-resizable-handler-b {
+  width: 100%;
+  height: 1px;
+  background-color: #f60;
+  cursor: row-resize;
+}
+.ks-resizable-handler-t {
+  left: 0;
+  top: -1px;
+}
+.ks-resizable-handler-b {
+  left: 0;
+  bottom: -1px;
+}
+.ks-line {
+  position: fixed;
+  background-image: url(http://gtms01.alicdn.com/tps/i1/T1gqGHFldgXXXe1I2r-1-1.png);
+  _position: absolute;
+}
+.ks-line-h {
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-repeat: repeat-x;
+  background-position: left center;
+  cursor: row-resize;
+}
+.ks-line-v {
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-repeat: repeat-y;
+  background-position: top center;
+  cursor: col-resize;
+}

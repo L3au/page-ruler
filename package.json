@@ -2,10 +2,10 @@
     "name": "page-ruler",
     "version": "1.0.0",
     "devDependencies": {
-        "grunt-contrib-uglify": "~0.2.0",
-        "grunt": "~0.4.1",
+        "grunt-contrib-uglify": "~3.0.1",
+        "grunt": "~1.0.1",
         "grunt-kmc": "~0.1.1",
-        "grunt-contrib-cssmin": "~0.6.0",
-        "grunt-contrib-copy":"~0.4.0"
+        "grunt-contrib-cssmin": "~2.2.0",
+        "grunt-contrib-copy":"~1.0.0"
     }
 }
